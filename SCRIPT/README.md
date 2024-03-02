@@ -15,9 +15,10 @@ library(readr)
 Una vez cargado el conjunto de datos `Iowa_Liquor_Sales.csv` en R, el siguiente paso es asignarlo a un nuevo objeto llamado `data`. Esto se hace para asegurar que cualquier manipulación, análisis o transformación se realice en este nuevo objeto, manteniendo así el conjunto de datos original sin modificaciones. Este enfoque promueve las buenas prácticas de manejo de datos, permitiendo a los usuarios o colaboradores revertir o comparar sus análisis con el conjunto de datos original en cualquier momento.
 
 ### Código
-```r
+```
 # Asignar el conjunto de datos cargado a un nuevo objeto llamado 'data'
 data <- Iowa_Liquor_Sales
+```
 
-# Este paso es crucial para mantener la integridad del conjunto de datos original mientras se realizan análisis y manipulaciones.
+
 
