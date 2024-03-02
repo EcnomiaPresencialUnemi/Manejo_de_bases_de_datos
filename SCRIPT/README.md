@@ -45,10 +45,8 @@ dim(datos)
 ```
 ### 5. Identificando la Clase de las Variables del Conjunto de Datos
 
-### Descripción
 Comprender la clase (tipo de dato) de cada variable en el conjunto de datos `data` es crucial para un análisis de datos efectivo. Para facilitar este entendimiento de manera rápida y eficiente, proporcionamos una instrucción en R que aplica la función `class` a cada columna del dataframe. Esto resulta en una visión clara de la naturaleza de los datos contenidos en cada variable, preparando el camino para manipulaciones y análisis posteriores adecuados.
 
-### Código
 ```
 # Mostrar la clase de cada variable del conjunto de datos
 sapply(data, class)
