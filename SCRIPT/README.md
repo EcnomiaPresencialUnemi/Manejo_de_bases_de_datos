@@ -78,4 +78,11 @@ Para obtener una visión general de cómo están representados los nombres de la
 # Ver la distribución y variación de los nombres de ciudades
 table(data$City)
 ```
+Tras identificar variaciones en la representación de los nombres de ciudades en nuestro conjunto de datos `data`, procedemos a normalizar estos nombres para asegurar consistencia en todo el conjunto. La normalización de los nombres de ciudades a un formato uniforme es crucial para análisis agrupados, comparaciones precisas y para evitar la duplicación innecesaria de categorías debido a diferencias en la capitalización.
+Utilizamos la función `toupper()` de R en combinación con `mutate()` de `dplyr` para convertir todos los nombres de ciudades a mayúsculas:
+
+```
+data <- data %>%
+  mutate(City = toupper(City))
+```
 
