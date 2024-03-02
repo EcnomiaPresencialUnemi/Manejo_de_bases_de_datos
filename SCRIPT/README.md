@@ -64,7 +64,8 @@ data <- data %>%
 
 ***Notas:***
 
-gsub("\\$", "", Sale (Dollars)): Esta instrucción elimina el símbolo del dólar ($) de los valores en la columna Sale (Dollars), permitiendo su posterior conversión a numérico.
-as.numeric(...): Convierte la cadena de texto resultante (ahora sin el símbolo del dólar) a un valor numérico.
-La función mutate de dplyr es utilizada para añadir o modificar la columna Sale_Dollars en el dataframe data, asegurando que el conjunto de datos original permanezca inalterado excepto por esta transformación.
-Este enfoque garantiza que la variable Sale (Dollars) pueda ser utilizada eficazmente en cálculos numéricos y análisis estadísticos, facilitando una comprensión más profunda de los patrones y tendencias en los datos de ventas de licor.
+### Notas
+- **`gsub("\\$", "", \`Sale (Dollars)\`)`:** Esta instrucción elimina el símbolo del dólar (`$`) de los valores en la columna `Sale (Dollars)`, preparándolos para su conversión a numérico.
+- **`as.numeric(...)`:** Convierte la cadena de texto resultante (ya sin el símbolo del dólar) en un valor numérico.
+- **`mutate(Sale_Dollars = ...)`:** Añade o modifica la columna `Sale_Dollars` en el dataframe `data`, aplicando las transformaciones anteriores. Esto asegura que la variable pueda ser utilizada en análisis numéricos subsiguientes.
+
