@@ -86,3 +86,6 @@ data <- data %>%
   mutate(City = toupper(City))
 ```
 
+***Notas:***
+- **mutate(City = toupper(City)):** Esta línea es el núcleo de nuestra operación de normalización. mutate() es una función de dplyr que nos permite crear o transformar columnas dentro de un dataframe. En este caso, estamos transformando la columna City.
+- **toupper(City):** toupper() es una función base de R que convierte todas las letras de un string a mayúsculas. Al aplicar toupper() a la columna City, estamos asegurando que todos los nombres de ciudades sean homogéneos en cuanto a su capitalización, convirtiéndolos todos a mayúsculas.
