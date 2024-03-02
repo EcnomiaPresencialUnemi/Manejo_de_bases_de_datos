@@ -6,6 +6,7 @@ Este script está dedicado a cargar el conjunto de datos `Iowa_Liquor_Sales.csv`
 ```
 # 1. CARGAR EL ARCHIVO ----------------------------------------------------
 # Cargar la librería necesaria para leer archivos CSV
+
 library(readr)
 ```
 
