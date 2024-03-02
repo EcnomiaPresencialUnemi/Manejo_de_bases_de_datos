@@ -63,8 +63,6 @@ data <- data %>%
 ```
 
 ***Notas:***
-
-### Notas
 - **`gsub("\\$", "", \`Sale (Dollars)\`)`:** Esta instrucción elimina el símbolo del dólar (`$`) de los valores en la columna `Sale (Dollars)`, preparándolos para su conversión a numérico.
 - **`as.numeric(...)`:** Convierte la cadena de texto resultante (ya sin el símbolo del dólar) en un valor numérico.
 - **`mutate(Sale_Dollars = ...)`:** Añade o modifica la columna `Sale_Dollars` en el dataframe `data`, aplicando las transformaciones anteriores. Esto asegura que la variable pueda ser utilizada en análisis numéricos subsiguientes.
