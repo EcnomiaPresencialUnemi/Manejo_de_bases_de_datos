@@ -34,5 +34,3 @@ Al finalizar este curso, los participantes serán capaces de:
 Te invitamos a explorar los materiales del curso, ejercicios, y recursos adicionales que encontrarás en este repositorio. ¡Comencemos juntos este viaje hacia la maestría en la manipulación de datos con `dplyr`!
 
 ---
-
-Este resumen ofrece una visión general del curso, sus objetivos, y el valor que aportará a los participantes. Puedes ajustar los detalles según sea necesario para alinearlos con el contenido específico de tu curso y el nivel de profundidad que planeas cubrir.
