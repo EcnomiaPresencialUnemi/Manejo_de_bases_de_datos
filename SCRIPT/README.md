@@ -18,7 +18,15 @@ data <- Iowa_Liquor_Sales
 ```
 
 ### 3. INSTALACIÓN Y CARGA DE LOS PAQUETES NECESARIOS
-# Instalar los paquetes
+
+## Instalación y Carga de Paquetes Necesarios
+
+### Descripción
+Para el análisis y manipulación de los datos del conjunto `Iowa_Liquor_Sales.csv`, se requiere la instalación y carga de varios paquetes de R que proporcionan herramientas poderosas y flexibles. Estos paquetes incluyen `tidyverse` para una amplia gama de funciones de manipulación de datos y visualización, `dplyr` para la transformación y manipulación de datos, y `lubridate` para facilitar el trabajo con fechas y horas.
+
+### Código
+```r
+# Instalar los paquetes necesarios
 install.packages("tidyverse")
 install.packages("dplyr")
 install.packages("lubridate")
@@ -27,5 +35,6 @@ install.packages("lubridate")
 library(tidyverse)
 library(dplyr)
 library(lubridate)
+
 
 
