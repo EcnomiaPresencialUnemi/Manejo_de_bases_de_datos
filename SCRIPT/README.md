@@ -35,5 +35,14 @@ library(lubridate)
 ***Nota:***
 *Aunque dplyr ya está incluido dentro del tidyverse, se recomienda su instalación explícita para asegurar que se dispone de la última versión. lubridate se incluye para un manejo eficiente de datos de tipo fecha y hora, facilitando la transformación y análisis de series temporales.*
 
+## 4. Verificación de las Dimensiones del Conjunto de Datos
+
+Para aquellos momentos en los que se necesita una confirmación rápida del tamaño del conjunto de datos `datos`, proporcionamos una instrucción en R extremadamente sencilla. Este comando muestra en la consola el número de filas y columnas del conjunto de datos, facilitando una visión instantánea de sus dimensiones.
+
+```
+# Mostrar directamente el número de filas y columnas del conjunto de datos
+dim(datos)
+```
+
 
 
