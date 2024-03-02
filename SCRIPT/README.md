@@ -32,7 +32,7 @@ library(tidyverse)
 library(dplyr)
 library(lubridate)
 ```
-### Nota
+*Nota*
 Aunque dplyr ya está incluido dentro del tidyverse, se recomienda su instalación explícita para asegurar que se dispone de la última versión. lubridate se incluye para un manejo eficiente de datos de tipo fecha y hora, facilitando la transformación y análisis de series temporales.
 
 
