@@ -51,7 +51,8 @@ Comprender la clase (tipo de dato) de cada variable en el conjunto de datos `dat
 # Mostrar la clase de cada variable del conjunto de datos
 sapply(data, class)
 ```
-### 6. Conversión de la Variable `Sale (Dollars)` a Numérico
+### 6. Conversión de algunas variables
+#### 6.1 Variable Sale_Dollars
 
 En el análisis de datos, es común encontrar variables numéricas representadas como texto, especialmente cuando incluyen símbolos de moneda. La variable `Sale (Dollars)` en nuestro conjunto de datos `data` presenta este caso, al estar registrada con el símbolo del dólar y como tipo character. Para facilitar análisis numéricos y estadísticos, es necesario convertir esta variable a un formato numérico puro.
 
