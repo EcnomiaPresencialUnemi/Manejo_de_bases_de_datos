@@ -17,5 +17,14 @@ Una vez cargado el conjunto de datos `Iowa_Liquor_Sales.csv` en R, el siguiente 
 data <- Iowa_Liquor_Sales
 ```
 
+### 3. INSTALACIÓN DE LOS PAQUETES NECESARIOS
+install.packages("tidyverse")
+install.packages("dplyr")
+install.packages("lubridate")
+
+# Cargar los paquetes
+library(tidyverse)
+library(dplyr)
+library(lubridate)
 
 
