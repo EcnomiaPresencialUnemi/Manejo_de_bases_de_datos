@@ -4,10 +4,6 @@ Para tu curso de "Manipulación de Bases de Datos" que planeas alojar en GitHub,
 
 ---
 
-### Curso de Manipulación de Bases de Datos con `dplyr`
-
-Bienvenidos al repositorio del curso de "Manipulación de Bases de Datos" donde exploraremos las herramientas y técnicas esenciales para gestionar y analizar datos en R utilizando el paquete `dplyr`. Este curso está diseñado para proporcionar una comprensión sólida de cómo manipular y preparar conjuntos de datos para análisis, enfocándonos en operaciones fundamentales que todo analista de datos debe conocer.
-
 **Contenidos del Curso:**
 
 - **El Operador Pipe (`%>%`)**: Aprende a encadenar múltiples operaciones de manipulación de datos de manera clara y eficiente, mejorando la legibilidad y la estructura del código.
