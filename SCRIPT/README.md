@@ -1,7 +1,3 @@
-# Scripts para Análisis del Conjunto de Datos de Ventas de Licor de Iowa
-
-Este directorio contiene scripts en R diseñados para cargar y analizar el conjunto de datos `Iowa_Liquor_Sales.csv`, proporcionando insights sobre las ventas de licor en el estado de Iowa.
-
 ## Script: cargar_datos.R
 
 ### Descripción
