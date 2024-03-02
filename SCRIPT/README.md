@@ -52,7 +52,7 @@ Comprender la clase (tipo de dato) de cada variable en el conjunto de datos `dat
 sapply(data, class)
 ```
 ### 6. Conversión de algunas variables
-#### 6.1 Variable Sale_Dollars
+#### 6.1 Variable `Sale_Dollars`
 
 En el análisis de datos, es común encontrar variables numéricas representadas como texto, especialmente cuando incluyen símbolos de moneda. La variable `Sale (Dollars)` en nuestro conjunto de datos `data` presenta este caso, al estar registrada con el símbolo del dólar y como tipo character. Para facilitar análisis numéricos y estadísticos, es necesario convertir esta variable a un formato numérico puro.
 
@@ -68,4 +68,14 @@ data <- data %>%
 - **`gsub("\\$", "", \`Sale (Dollars)\`)`:** Esta instrucción elimina el símbolo del dólar (`$`) de los valores en la columna `Sale (Dollars)`, preparándolos para su conversión a numérico.
 - **`as.numeric(...)`:** Convierte la cadena de texto resultante (ya sin el símbolo del dólar) en un valor numérico.
 - **`mutate(Sale_Dollars = ...)`:** Añade o modifica la columna `Sale_Dollars` en el dataframe `data`, aplicando las transformaciones anteriores. Esto asegura que la variable pueda ser utilizada en análisis numéricos subsiguientes.
+
+#### 6.2 Variable `City`
+
+Antes de proceder con la normalización o cualquier otro tipo de manipulación de los nombres de las ciudades en nuestro conjunto de datos `data`, es esencial realizar una exploración preliminar. Esto nos permite identificar las variaciones en la representación de los nombres de las ciudades, incluyendo diferencias en la capitalización, posibles errores de ortografía y otras inconsistencias que podrían afectar los análisis posteriores.
+Para obtener una visión general de cómo están representados los nombres de las ciudades en la variable `City`, utilizamos la siguiente instrucción, que nos proporciona una tabla de frecuencias de todos los nombres únicos de ciudades presentes en el conjunto de datos:
+
+```
+# Ver la distribución y variación de los nombres de ciudades
+table(data$City)
+```
 
