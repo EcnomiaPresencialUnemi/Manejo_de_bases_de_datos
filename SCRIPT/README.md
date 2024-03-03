@@ -88,3 +88,14 @@ data <- data %>%
 ***Notas:***
 - **mutate(City = toupper(City)):** Esta línea es el núcleo de nuestra operación de normalización. `mutate()` es una función de dplyr que nos permite crear o transformar columnas dentro de un dataframe. En este caso, estamos transformando la columna `City`.
 - **toupper(City):** `toupper()` es una función base de R que convierte todas las letras de un string a mayúsculas. Al aplicar `toupper()` a la columna `City`, estamos asegurando que todos los nombres de ciudades sean homogéneos en cuanto a su capitalización, convirtiéndolos todos a mayúsculas.
+
+### 7. Agrupación de Datos
+La agrupación de datos por variables clave, nos permite realizar análisis detallados y operaciones específicas dentro de cada grupo, revelando patrones y tendencias únicas.
+
+#### 7.1 Agrupación por la variable `City`
+Para facilitar análisis que requieren una visión detallada por ciudad, utilizamos la función `group_by` de `dplyr` para agrupar nuestro conjunto de datos `data` por la variable `City`. Este paso es fundamental para realizar operaciones subsiguientes, como cálculos de agregación o estadísticas descriptivas, de manera específica para cada ciudad representada en los datos.
+El siguiente fragmento de código demuestra cómo agrupar los datos:
+
+```
+g1 <- group_by(data, City)
+```
