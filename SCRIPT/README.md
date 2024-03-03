@@ -121,4 +121,21 @@ data %>%
   summarise(media = mean(Sale_Dollars))
 ```
 
+#### 7.1.2 Análisis Detallado de Ventas por Ciudad con Múltiples Estadísticas
+Para obtener una comprensión más profunda de las ventas en cada ciudad, extendemos nuestro análisis para incluir no solo la `media` de ventas (`Sale_Dollars`) sino también los valores `mínimos` y `máximos`. Esto nos da una visión completa del rango de ventas, complementando nuestra evaluación del desempeño de ventas por ciudad.
+
+```
+data %>%
+  group_by(City) %>%
+  summarise(across(Sale_Dollars, list(
+    media = ~mean(.),
+    minimo = ~min(.),
+    maximo = ~max(.)
+  )))
+```
+- **group_by(City):** Agrupa el conjunto de datos por la variable City.
+- **summarise(across(...)):** Dentro de summarise, `across` se utiliza para aplicar funciones específicas a la columna `Sale_Dollars` para cada grupo de ciudad.
+- **list(media = ~mean(.), minimo = ~min(.), maximo = ~max(.)):** Define una lista de funciones a aplicar: la `media`, el valor `mínimo` y el valor `máximo` de `Sale_Dollars`. Cada función se nombra (media, mínimo, máximo) para facilitar la interpretación de los resultados.
+- **El signo `~`**: introduce fórmulas para definir operaciones en `across()`, permitiendo aplicar funciones como media, mínimo y máximo a `Sale_Dollars`. Su omisión resultaría en errores, ya que `across` espera fórmulas para especificar estas transformaciones.
+
 
