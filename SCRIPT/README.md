@@ -113,6 +113,12 @@ Con los datos **agrupados por ciudad** y habiendo confirmado la ausencia de **va
 ```
 summarise(g1, media = mean(Sale_Dollars))
 ```
+Una vez hecho esto, queremos ahora demonstrar la eficiencia del operador pipe (`%>%`) en `dplyr` para realizar tareas de manipulación de datos en secuencia. En este caso, agrupamos nuestro conjunto de datos `data` por la variable `City` y calculamos la media de `Sale_Dollars` para cada ciudad en pasos consecutivos, todo en una única expresión concisa.
 
+```
+data %>%
+  group_by(City) %>%
+  summarise(media = mean(Sale_Dollars))
+```
 
 
