@@ -108,6 +108,6 @@ Para profundizar en nuestro análisis de ventas por ciudad, calculamos la media 
 resumen <- summarise(g1, media = mean(Sale_Dollars, na.rm = TRUE))
 ```
 
-- **g1**: representa nuestro conjunto de datos previamente agrupado por la variable City.
-- **summarise(g1, media = mean(Sale_Dollars, na.rm = TRUE)):** Esta línea de código utiliza la función summarise para calcular la media de la variable Sale_Dollars para cada grupo de ciudad en g1. La opción na.rm = TRUE asegura que se omitan los valores NA en el cálculo de la media, lo cual es una práctica común para manejar datos faltantes y obtener resultados precisos.
+- **g1**: representa nuestro conjunto de datos previamente agrupado por la variable `City`.
+- **summarise(g1, media = mean(Sale_Dollars, na.rm = TRUE)):** Esta línea de código utiliza la función summarise para calcular la `media` de la variable`Sale_Dollars` para cada grupo de ciudad en `g1`. La opción `na.rm = TRUE` asegura que se omitan los valores `NA` en el cálculo de la `media`, lo cual es una práctica común para manejar datos faltantes y obtener resultados precisos.
 
