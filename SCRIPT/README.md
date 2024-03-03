@@ -102,11 +102,17 @@ g1 <- group_by(data, City)
 - **group_by(data, City):** Agrupa el dataframe data por la variable `City`, permitiendo que cualquier operación subsiguiente se ejecute dentro de cada grupo de ciudad. Esto es especialmente útil para analizar patrones o calcular estadísticas que son específicas a cada ciudad.
 
 #### 7.1.1 Cálculo de la Media de `Sale_Dollars` por Ciudad
-Primero para asegurar la integridad de nuestros análisis, es fundamental conocer si existen valores perdidos en la variable `Sale_Dollars`. Esto nos permite evaluar la necesidad de limpieza de datos o imputación de valores antes de proceder.
+Primero para asegurar la integridad de nuestros análisis, es fundamental conocer si existen **valores perdidos** en la variable `Sale_Dollars`. Esto nos permite evaluar la necesidad de limpieza de datos o imputación de valores antes de proceder.
 
 ```
 # Mostrar en la consola el número de valores perdidos en Sale_Dollars
 print(sum(is.na(data$Sale_Dollars)))
 ```
+Con los datos **agrupados por ciudad** y habiendo confirmado la ausencia de **valores perdidos** en `Sale_Dollars`, calculamos la `media` de ventas para cada ciudad. Este análisis nos permite evaluar el rendimiento promedio de las ventas en diferentes ubicaciones, ofreciendo una base para comparaciones y toma de decisiones informadas.
+
+```
+summarise(g1, media = mean(Sale_Dollars))
+```
+
 
 
