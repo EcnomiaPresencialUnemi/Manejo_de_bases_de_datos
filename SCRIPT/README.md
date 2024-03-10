@@ -82,6 +82,7 @@ Tras identificar variaciones en la representación de los nombres de ciudades en
 Utilizamos la función `toupper()` de R en combinación con `mutate()` de `dplyr` para convertir todos los nombres de ciudades a mayúsculas:
 
 ```
+# Normaliza los nombres de ciudades a un formato uniforme
 data <- data %>%
   mutate(City = toupper(City))
 ```
