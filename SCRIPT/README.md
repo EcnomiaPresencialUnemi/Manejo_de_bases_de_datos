@@ -58,6 +58,7 @@ En el análisis de datos, es común encontrar variables numéricas representadas
 El siguiente fragmento de código en R demuestra cómo realizar esta conversión utilizando las librerías `dplyr` para manipulación de datos y funciones base de R para el manejo de strings. Este proceso implica dos pasos principales: primero, eliminar el símbolo del dólar de cada valor utilizando `gsub`; y segundo, convertir el resultado a tipo numérico con `as.numeric`.
 
 ```
+# Convertir la variable Sale_Dollars a numérica
 data <- data %>%
   mutate(Sale_Dollars = as.numeric(gsub("\\$", "", `Sale (Dollars)`)))
 ```
