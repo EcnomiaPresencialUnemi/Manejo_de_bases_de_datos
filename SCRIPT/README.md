@@ -40,7 +40,7 @@ Para aquellos momentos en los que se necesita una confirmación rápida del tama
 
 ```
 # Mostrar directamente el número de filas y columnas del conjunto de datos
-dim(datos)
+dim(data)
 ```
 ### 5. Identificando la Clase de las Variables del Conjunto de Datos
 
