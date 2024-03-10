@@ -173,3 +173,9 @@ data %>%
   arrange(City, `Category Name`) %>%
   print(n = Inf)
 ```
+***Notas:***
+Este código amplía nuestro análisis de ventas incorporando una agrupación adicional por `Category Name` junto con `City`. Realiza los siguientes pasos:
+1. **`group_by(City, \`Category Name\`)`**: Agrupa los datos por ambas, ciudad y categoría de producto, permitiendo un análisis detallado de las ventas por tipo de producto dentro de cada localidad.
+2. **`summarise(...)`**: Calcula la media (`Media_Ventas`), el mínimo (`Mínimo_Ventas`), el máximo (`Máximo_Ventas`), y el total (`Total_Ventas`) de `Sale_Dollars` para cada combinación de ciudad y categoría de producto.
+3. **`arrange(City, \`Category Name\`)`**: Ordena los resultados para facilitar su revisión.
+4. **`print(n = Inf)`**: Asegura que todos los grupos sean mostrados en la consola.
