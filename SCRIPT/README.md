@@ -148,4 +148,11 @@ table(data$`Category Name`)
 ```
 Vemos que Category Name tiene nombres repetidos en mayúsculas y en minúsculas, por tanto hay que estandarizar estos nombres.
 
+#### 7.2.2 Normaliza los nombres de Category Name a un formato uniforme
+```
+# 7.2.2 Normaliza los nombres de Category Name a un formato uniforme
+data <- data %>%
+  mutate(`Category Name` = toupper(`Category Name`))
+```
+
 
