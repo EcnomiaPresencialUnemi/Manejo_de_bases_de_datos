@@ -160,9 +160,8 @@ A continuación se explica brevemente el significado de las tres categorías de 
 - **VODKA FLAVORED**: El vodka con sabor o "Vodka Flavored" es vodka al que se le han añadido sabores durante el proceso de destilación o después de él. 
 
 #### 7.2.3 Agrupando los datos por `City` y `Category Name`
-
-# Agrupando los datos por `City` y `Category Name`
 ```
+# Agrupando los datos por `City` y `Category Name`
 library(dplyr)
 
 data %>%
