@@ -130,6 +130,7 @@ data %>%
 Para obtener una comprensión más profunda de las ventas en cada ciudad, extendemos nuestro análisis para incluir no solo la `media` de ventas (`Sale_Dollars`) sino también los valores `mínimos` y `máximos`. Esto nos da una visión completa del rango de ventas, complementando nuestra evaluación del desempeño de ventas por ciudad.
 
 ```
+# Calcular multiples estadisticos por ciudad
 data %>%
   group_by(City) %>%
   summarise(Media_Ventas = mean(Sale_Dollars),
