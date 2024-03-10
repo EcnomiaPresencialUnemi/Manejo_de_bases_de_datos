@@ -179,3 +179,11 @@ Este código amplía nuestro análisis de ventas incorporando una agrupación ad
 2. **`summarise(...)`**: Calcula la media (`Media_Ventas`), el mínimo (`Mínimo_Ventas`), el máximo (`Máximo_Ventas`), y el total (`Total_Ventas`) de `Sale_Dollars` para cada combinación de ciudad y categoría de producto.
 3. **`arrange(City, \`Category Name\`)`**: Ordena los resultados para facilitar su revisión.
 4. **`print(n = Inf)`**: Asegura que todos los grupos sean mostrados en la consola.
+
+***Comentarios sobre los resultados:***
+La desagregación de ventas por ciudad y categoría de producto revela patrones interesantes y variaciones en las preferencias de consumo entre las localidades:
+- En **Cedar Rapids**, las ventas de `VODKA FLAVORED` lideran en términos de ventas totales, seguidas de cerca por `CREAM LIQUEURS`. Esto indica una preferencia notable por los licores con sabor, con el vodka aromatizado mostrando el mayor alcance.
+- **Davenport** muestra un fuerte interés en `VODKA FLAVORED` también, con ventas totales que superan las otras categorías. Sin embargo, `CREAM LIQUEURS` aquí presentan el precio medio de venta más alto, lo que sugiere una demanda de productos premium dentro de esta categoría.
+- En **Waterloo**, la categoría `VODKA FLAVORED` también domina en términos de ventas totales, pero `FLAVORED RUM` muestra el precio máximo de venta más alto, destacando la popularidad de ciertos productos premium dentro de esta categoría.
+Estos resultados subrayan cómo las preferencias de consumo de licor pueden variar significativamente de una ciudad a otra, no solo en términos de categoría de producto preferida sino también en la disposición a gastar en productos premium. La información detallada sobre las ventas mínimas y máximas, junto con el promedio y el total de ventas por categoría, ofrece valiosos insights para estrategias de marketing y gestión de inventario focalizadas, permitiendo a los negocios adaptarse mejor a las preferencias locales y capitalizar las tendencias de consumo en diferentes mercados.
+
