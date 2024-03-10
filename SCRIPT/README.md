@@ -183,11 +183,16 @@ Este código amplía nuestro análisis de ventas incorporando una agrupación ad
 ***Comentarios sobre los resultados:***
 
 La desagregación de ventas por ciudad y categoría de producto revela patrones interesantes y variaciones en las preferencias de consumo entre las localidades:
-- En **Cedar Rapids**, las ventas de `VODKA FLAVORED` lideran en términos de ventas totales, seguidas de cerca por `CREAM LIQUEURS`. Esto indica una preferencia notable por los licores con sabor, con el vodka aromatizado mostrando el mayor alcance.
-- **Davenport** muestra un fuerte interés en `VODKA FLAVORED` también, con ventas totales que superan las otras categorías. Sin embargo, `CREAM LIQUEURS` aquí presentan el precio medio de venta más alto, lo que sugiere una demanda de productos premium dentro de esta categoría.
-- En **Waterloo**, la categoría `VODKA FLAVORED` también domina en términos de ventas totales, pero `FLAVORED RUM` muestra el precio máximo de venta más alto, destacando la popularidad de ciertos productos premium dentro de esta categoría.
-  
-Estos resultados subrayan cómo las preferencias de consumo de licor pueden variar significativamente de una ciudad a otra, no solo en términos de categoría de producto preferida sino también en la disposición a gastar en productos premium. 
 
-La información detallada sobre las ventas mínimas y máximas, junto con el promedio y el total de ventas por categoría, ofrece valiosos insights para estrategias de marketing y gestión de inventario focalizadas, permitiendo a los negocios adaptarse mejor a las preferencias locales y capitalizar las tendencias de consumo en diferentes mercados.
+- **Predominancia de Vodka Flavored:** En todas las ciudades, `VODKA FLAVORED` destaca como la categoría con el mayor total de ventas, subrayando su popularidad universal. Sin embargo, las variaciones en las medias, los mínimos y los máximos de ventas dentro de esta categoría sugieren diferencias en cómo se consume y se valora este producto en cada ciudad.
+
+- **Variabilidad en el Consumo:** 
+  - En **Cedar Rapids**, la categoría `VODKA FLAVORED` muestra una considerable variabilidad, con un mínimo de ventas de $3.36 y un máximo de $5040, reflejando una amplia gama de preferencias y posiblemente promociones o eventos que impulsan las ventas pico.
+  - **Davenport** comparte esta preferencia por `VODKA FLAVORED`, pero con un precio medio de venta más alto comparado con otras categorías, lo que podría indicar una tendencia hacia productos premium o ediciones especiales dentro de esta categoría.
+  - **Waterloo**, manteniendo la tendencia, también ve a `VODKA FLAVORED` como su categoría más vendida, con una media de ventas que supera las otras categorías, lo que sugiere una demanda constante y posiblemente una lealtad del consumidor hacia marcas o productos específicos en esta categoría.
+
+- **Insights para Estrategias de Negocio:** La constante demanda de `VODKA FLAVORED` a través de las ciudades señala una oportunidad clave para las estrategias de marketing y de inventario. Sin embargo, las diferencias en las medias y los rangos de ventas sugieren que las tácticas pueden necesitar ser personalizadas para cada ciudad, aprovechando la popularidad general de `VODKA FLAVORED` mientras se adaptan a las peculiaridades locales en el comportamiento de compra.
+
+Este análisis recalca la importancia de entender no solo qué categorías son populares, sino también cómo las características de las ventas varían entre las localidades. Estos insights pueden guiar a los negocios para afinar sus estrategias de oferta, promoción y precio, maximizando así su resonancia y eficacia en cada mercado local.
+
 
