@@ -154,5 +154,7 @@ Vemos que Category Name tiene nombres repetidos en mayúsculas y en minúsculas,
 data <- data %>%
   mutate(`Category Name` = toupper(`Category Name`))
 ```
-
-
+A continuación se explica brevemente el significado de las tres categorías de licores de la variable `Category Name`
+- **CREAM LIQUEURS**: Los licores cremosos o "Cream Liqueurs" son bebidas alcohólicas que combinan crema con un licor base, como el whisky, y a menudo se les añaden sabores como chocolate, café, vainilla, entre otros.
+- **FLAVORED RUM**: El ron con sabor o "Flavored Rum" se refiere a las variantes del ron tradicional a las que se les han añadido sabores naturales o artificiales.
+- **VODKA FLAVORED**: El vodka con sabor o "Vodka Flavored" es vodka al que se le han añadido sabores durante el proceso de destilación o después de él. 
