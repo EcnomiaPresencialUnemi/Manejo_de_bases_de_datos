@@ -141,10 +141,11 @@ data %>%
 #### 7.2 Agrupación por dos variables: `City` y `Category Name`
 Extendemos ahora la agrupación a dos variables, a `City` le añadimos `Category Name`, con lo cual el análisis se enfocará en entender cómo las ventas varían por ciudad y por categoría de producto. Este enfoque permitirá identificar tendencias de consumo locales y la popularidad de diferentes categorías de licor en distintas áreas. Antes de correr el código de agrupación verificamos algunas cosas de la nueva variable.
 
-### 7.2.1 Ver la distribución de la variable `Category Name`
+#### 7.2.1 Ver la distribución de la variable `Category Name`
 ```
 # Ver la distribución y variación de las categorias de la variable Category Name
 table(data$`Category Name`)
 ```
+Vemos que Category Name tiene nombres repetidos en mayúsculas y en minúsculas, por tanto hay que estandarizar estos nombres.
 
 
