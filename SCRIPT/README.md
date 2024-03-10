@@ -114,12 +114,13 @@ print(sum(is.na(data$Sale_Dollars)))
 Con los datos **agrupados por ciudad** y habiendo confirmado la ausencia de **valores perdidos** en `Sale_Dollars`, calculamos la `media` de ventas para cada ciudad. Este análisis nos permite evaluar el rendimiento promedio de las ventas en diferentes ubicaciones, ofreciendo una base para comparaciones y toma de decisiones informadas.
 
 ```
+# Calcular la media de las ventas por ciudad
 summarise(g1, media = mean(Sale_Dollars))
 ```
 Una vez hecho esto, queremos ahora demonstrar la eficiencia del operador pipe (`%>%`) en `dplyr` para realizar tareas de manipulación de datos en secuencia. En este caso, agrupamos nuestro conjunto de datos `data` por la variable `City` y calculamos la media de `Sale_Dollars` para cada ciudad en pasos consecutivos, todo en una única expresión concisa.
 
 ```
-# Calcular la media de las ventas por ciudad
+# Agrupar y calcular la media en una sola instruccion
 data %>%
   group_by(City) %>%
   summarise(media = mean(Sale_Dollars))
