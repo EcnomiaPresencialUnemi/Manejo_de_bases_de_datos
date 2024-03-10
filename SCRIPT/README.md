@@ -188,5 +188,6 @@ La desagregación de ventas por ciudad y categoría de producto revela patrones 
 - En **Waterloo**, la categoría `VODKA FLAVORED` también domina en términos de ventas totales, pero `FLAVORED RUM` muestra el precio máximo de venta más alto, destacando la popularidad de ciertos productos premium dentro de esta categoría.
   
 Estos resultados subrayan cómo las preferencias de consumo de licor pueden variar significativamente de una ciudad a otra, no solo en términos de categoría de producto preferida sino también en la disposición a gastar en productos premium. 
+
 La información detallada sobre las ventas mínimas y máximas, junto con el promedio y el total de ventas por categoría, ofrece valiosos insights para estrategias de marketing y gestión de inventario focalizadas, permitiendo a los negocios adaptarse mejor a las preferencias locales y capitalizar las tendencias de consumo en diferentes mercados.
 
