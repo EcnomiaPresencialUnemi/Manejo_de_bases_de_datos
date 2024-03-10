@@ -94,7 +94,7 @@ data <- data %>%
 ### 7. Agrupación de Datos
 La agrupación de datos por variables clave, nos permite realizar análisis detallados y operaciones específicas dentro de cada grupo, revelando patrones y tendencias únicas.
 
-#### 7.1 Agrupación por la variable `City`
+#### 7.1 Agrupación por una variable: `City`
 Para facilitar análisis que requieren una visión detallada por ciudad, utilizamos la función `group_by` de `dplyr` para agrupar nuestro conjunto de datos `data` por la variable `City`. Este paso es fundamental para realizar operaciones subsiguientes, como cálculos de agregación o estadísticas descriptivas, de manera específica para cada ciudad representada en los datos.
 El siguiente fragmento de código demuestra cómo agrupar los datos:
 
@@ -138,6 +138,7 @@ data %>%
             Máximo_Ventas = max(Sale_Dollars)) %>%
   print()
 ```
-
+#### 7.2 Agrupación por dos variables: `City` y `Category Name`
+Extendemos ahora la agrupación a dos variables, a `City` le añadimos `Category Name`, con lo cual el análisis se enfocará en entender cómo las ventas varían por ciudad y por categoría de producto. Este enfoque permitirá identificar tendencias de consumo locales y la popularidad de diferentes categorías de licor en distintas áreas.
 
 
