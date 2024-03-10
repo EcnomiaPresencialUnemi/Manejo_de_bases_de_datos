@@ -99,6 +99,7 @@ Para facilitar análisis que requieren una visión detallada por ciudad, utiliza
 El siguiente fragmento de código demuestra cómo agrupar los datos:
 
 ```
+# Agrupar los datos por ciudad
 g1 <- group_by(data, City)
 ```
 - **group_by(data, City):** Agrupa el dataframe data por la variable `City`, permitiendo que cualquier operación subsiguiente se ejecute dentro de cada grupo de ciudad. Esto es especialmente útil para analizar patrones o calcular estadísticas que son específicas a cada ciudad.
