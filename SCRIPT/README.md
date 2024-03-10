@@ -181,6 +181,7 @@ Este código amplía nuestro análisis de ventas incorporando una agrupación ad
 4. **`print(n = Inf)`**: Asegura que todos los grupos sean mostrados en la consola.
 
 ***Comentarios sobre los resultados:***
+
 La desagregación de ventas por ciudad y categoría de producto revela patrones interesantes y variaciones en las preferencias de consumo entre las localidades:
 - En **Cedar Rapids**, las ventas de `VODKA FLAVORED` lideran en términos de ventas totales, seguidas de cerca por `CREAM LIQUEURS`. Esto indica una preferencia notable por los licores con sabor, con el vodka aromatizado mostrando el mayor alcance.
 - **Davenport** muestra un fuerte interés en `VODKA FLAVORED` también, con ventas totales que superan las otras categorías. Sin embargo, `CREAM LIQUEURS` aquí presentan el precio medio de venta más alto, lo que sugiere una demanda de productos premium dentro de esta categoría.
