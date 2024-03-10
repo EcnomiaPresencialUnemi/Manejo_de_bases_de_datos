@@ -158,3 +158,19 @@ A continuación se explica brevemente el significado de las tres categorías de 
 - **CREAM LIQUEURS**: Los licores cremosos o "Cream Liqueurs" son bebidas alcohólicas que combinan crema con un licor base, como el whisky, y a menudo se les añaden sabores como chocolate, café, vainilla, entre otros.
 - **FLAVORED RUM**: El ron con sabor o "Flavored Rum" se refiere a las variantes del ron tradicional a las que se les han añadido sabores naturales o artificiales.
 - **VODKA FLAVORED**: El vodka con sabor o "Vodka Flavored" es vodka al que se le han añadido sabores durante el proceso de destilación o después de él. 
+
+#### 7.2.3 Agrupando los datos por `City` y `Category Name`
+
+# Agrupando los datos por `City` y `Category Name`
+```
+library(dplyr)
+
+data %>%
+  group_by(City, `Category Name`) %>%
+  summarise(Media_Ventas = mean(Sale_Dollars),
+            Mínimo_Ventas = min(Sale_Dollars),
+            Máximo_Ventas = max(Sale_Dollars),
+            Total_Ventas = sum(Sale_Dollars)) %>%
+  arrange(City, `Category Name`) %>%
+  print(n = Inf)
+```
