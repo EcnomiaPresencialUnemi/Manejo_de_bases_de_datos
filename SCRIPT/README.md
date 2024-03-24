@@ -38,7 +38,7 @@ library(formattable)
 ***Nota:***
 *Aunque dplyr ya está incluido dentro del tidyverse, se recomienda su instalación explícita para asegurar que se dispone de la última versión. lubridate se incluye para un manejo eficiente de datos de tipo fecha y hora, facilitando la transformación y análisis de series temporales.*
 
-### 4. Verificación de algunas características de data
+### 4. Verificación de algunas características del dataset
 Se realiza un resumen general del conjunto de datos, incluyendo la cantidad de observaciones, número de variables, cantidad de valores faltantes, entre otros, por medio de la función `ExpData` del paquete `SmartEDA`. El argumento type = 1 proporciona esta salida y la función `formattable` del paquete del mismo nombre ayuda a una mejor estilización de la salida.
 ```
 formattable(ExpData(data=data,type=1)) 
