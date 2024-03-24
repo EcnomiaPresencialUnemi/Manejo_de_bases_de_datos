@@ -18,18 +18,19 @@ data <- Iowa_Liquor_Sales
 
 ### 3. Instalación y carga de los paquetes necesarios
 
-Para el análisis y manipulación de los datos del conjunto `Iowa_Liquor_Sales.csv`, se requiere la instalación y carga de varios paquetes de R que proporcionan herramientas poderosas y flexibles. Estos paquetes incluyen `tidyverse` para una amplia gama de funciones de manipulación de datos y visualización, `dplyr` para la transformación y manipulación de datos, y `lubridate` para facilitar el trabajo con fechas y horas.
-
+Para el análisis y manipulación de los datos del conjunto `Iowa_Liquor_Sales.csv`, se requiere la instalación y carga de varios paquetes de R que proporcionan herramientas poderosas y flexibles. 
 ```
 # Instalar los paquetes necesarios
-install.packages("tidyverse")
-install.packages("dplyr")
-install.packages("lubridate")
+install.packages("tidyverse") # colección de paquetes que facilita la importación, manipulación y visualización de datos.
+install.packages("dplyr") # paquete para la transformación y manipulación de datos que proporciona funciones intuitivas.
+install.packages("lubridate") # paquete que facilita el trabajo con fechas y horas, simplificando la manipulación y cálculo de intervalos de tiempo.
+install.packages("DataExplorer") # paquete que automatiza la exploración de datos y la generación de informes.
 
 # Cargar los paquetes
 library(tidyverse)
 library(dplyr)
 library(lubridate)
+library(DataExplorer)
 ```
 ***Nota:***
 *Aunque dplyr ya está incluido dentro del tidyverse, se recomienda su instalación explícita para asegurar que se dispone de la última versión. lubridate se incluye para un manejo eficiente de datos de tipo fecha y hora, facilitando la transformación y análisis de series temporales.*
