@@ -24,32 +24,30 @@ Para el análisis y manipulación de los datos del conjunto `Iowa_Liquor_Sales.c
 install.packages("tidyverse") # colección de paquetes que facilita la importación, manipulación y visualización de datos.
 install.packages("dplyr") # paquete para la transformación y manipulación de datos que proporciona funciones intuitivas.
 install.packages("lubridate") # paquete que facilita el trabajo con fechas y horas, simplificando la manipulación y cálculo de intervalos de tiempo.
-install.packages("DataExplorer") # paquete que automatiza la exploración de datos y la generación de informes.
-
+install.packages("SmartEDA") # paquete que automatiza la exploración de datos y la generación de informes.
+install.packages("formattable") # paquete que permite crear tablas con opciones avanzadas de formato, mejorando la presentación y la capacidad de resaltar elementos clave mediante el uso de estilos condicionales.
+```
+```
 # Cargar los paquetes
 library(tidyverse)
 library(dplyr)
 library(lubridate)
-library(DataExplorer)
+library(SmartEDA)
+library(formattable)
 ```
 ***Nota:***
 *Aunque dplyr ya está incluido dentro del tidyverse, se recomienda su instalación explícita para asegurar que se dispone de la última versión. lubridate se incluye para un manejo eficiente de datos de tipo fecha y hora, facilitando la transformación y análisis de series temporales.*
 
-### 4. Verificación de las Dimensiones del Conjunto de Datos
-
-Para aquellos momentos en los que se necesita una confirmación rápida del tamaño del conjunto de datos `datos`, proporcionamos una instrucción en R extremadamente sencilla. Este comando muestra en la consola el número de filas y columnas del conjunto de datos, facilitando una visión instantánea de sus dimensiones.
+### 4. Verificación de algunas características de data
+Se realiza un resumen general del conjunto de datos, incluyendo la cantidad de observaciones, número de variables, cantidad de valores faltantes, entre otros, por medio de la función `ExpData` del paquete `SmartEDA`. El argumento type = 1 proporciona esta salida y la función `formattable` del paquete del mismo nombre ayuda a una mejor estilización de la salida.
+```
+formattable(ExpData(data=data,type=1)) 
+```
+### 5. Identificando la estructura de los datos
+Se realiza un resumen a nivel de variable, donde para cada columna del conjunto de datos se proporciona información como el número de observaciones, el recuento de valores faltantes, el porcentaje de valores faltantes y el número de valores distintos, por medio de la función `ExpData` del paquete `SmartEDA`. El argumento type = 2 proporciona esta salida y la función `formattable` del paquete del mismo nombre ayuda a una mejor estilización de la salida.
 
 ```
-# Mostrar directamente el número de filas y columnas del conjunto de datos
-dim(data)
-```
-### 5. Identificando la Clase de las Variables del Conjunto de Datos
-
-Comprender la clase (tipo de dato) de cada variable en el conjunto de datos `data` es crucial para un análisis de datos efectivo. Para facilitar este entendimiento de manera rápida y eficiente, proporcionamos una instrucción en R que aplica la función `class` a cada columna del dataframe. Esto resulta en una visión clara de la naturaleza de los datos contenidos en cada variable, preparando el camino para manipulaciones y análisis posteriores adecuados.
-
-```
-# Mostrar la clase de cada variable del conjunto de datos
-sapply(data, class)
+formattable(ExpData(data=data,type=2))
 ```
 ### 6. Conversión de algunas variables
 #### 6.1 Variable `Sale_Dollars`
